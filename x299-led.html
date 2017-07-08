@@ -1,0 +1,706 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MSI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.msi.com/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://asset.msi.com/event/desktop/2016/MB_LandingPage/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://www.msi.com/css/bootstrap-extensions.min.css" rel="stylesheet" />
+    <link href="https://asset.msi.com/event/desktop/2016/MB_LandingPage/css/common.css" rel="stylesheet" />
+    <link href="https://event.msi.com/msifonts/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="https://asset.msi.com/event/desktop/2016/MB_LandingPage/css/animate.css" rel="stylesheet" />
+    <link href="https://asset.msi.com/event/mb/2017/mb-mystic-light/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://asset.msi.com/event/mb/2017/mb-mystic-light/owlcarousel/owl.theme.default.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .demoMotherboard {
+        position: relative;
+    }
+    
+    .x299-svg {
+        position: absolute;
+        z-index: 10;
+        max-width: 810px;
+        max-height: 960px;
+    }
+    
+    .x299-img {
+        position: absolute;
+        max-width: 810px;
+        max-height: 960px;
+    }
+    
+    #light-effect ul li {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        color: #fff;
+        border: 3px solid #fff;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+    
+    #light-effect ul li:hover {
+        color: #ff0000;
+    }
+    
+    #light-effect ul li:active {
+        color: #ff0000;
+    }
+    
+    .light_rainbow_1 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.2s;
+    }
+    .light_rainbow_2 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.3s;
+    }
+    .light_rainbow_3 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.4s;
+    }
+    .light_rainbow_4 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.5s;
+    }
+    .light_rainbow_5 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.6s;
+    }
+    .light_rainbow_6 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.7s;
+    }
+    .light_rainbow_7 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.8s;
+    }
+    .light_rainbow_8 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 0.9s;
+    }
+    .light_rainbow_9 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1s;
+    }
+    .light_rainbow_10 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1.1s;
+    }
+    .light_rainbow_11 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1.2s;
+    }
+    .light_rainbow_12 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1.3s;
+    }
+    .light_rainbow_13 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1.4s;
+    }
+    .light_rainbow_14 {
+        animation: rainbow 3s linear infinite;
+        animation-delay: 1.5s;
+    }
+    /*.light_movie{
+        opacity:1;
+    }*/
+    @keyframes rainbow {
+        0% {stop-color: red;}
+        10% {stop-color: #ff9900;}
+        20% {stop-color: #ccff00;}
+        30% {stop-color: #33ff00;}
+        40% {stop-color: #00ff66;}
+        50% {stop-color: cyan;}
+        60% {stop-color: #0066ff;}
+        70% {stop-color: #3300ff;}
+        80% {stop-color: #cc00ff;}
+        90% {stop-color: #ff0099;}
+        100% {stop-color: red;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- \\DESIGNSERVER\Temp\Digital Marketing\Mia\MysticLight_mainBlock/x299-led.html -->
+    <div id="projectid" class="container-fluid">
+        <section class="row">
+            <div class="col-md-6">
+                <h1 style="color:#fff; text-align: center;">MysticLight RGB DEMO</h1>
+                <h4 style="color:#fff; text-align: center;">此為DEMO版本，因為還沒完全建置完畢~所以轉換效果的時候<strong><u>如果壞掉是正常的</u></strong><br>請重新F5~~<br>
+                所有效果寫好才會做轉換的控制唷~啾咪O.&#60y<br>
+                如果有任何的問題或是建議請來信 Mialuo@msi.com</h5>
+                <div id="light-effect" style="text-align: center;">
+                    <ul>
+                        <li data-effect="No-animation">No animation</li>
+                        <li data-effect="Breathing">Breathing</li>
+                        <li data-effect="Flashing">Flashing</li>
+                        <li data-effect="Double-Flashing">Double Flashing</li>
+                        <li data-effect="Random">Random</li>
+                        <li data-effect="Stack">Stack</li>
+                        <li data-effect="Wave-Marquee">Wave / Marquee</li>
+                        <li data-effect="Cpu_tem">CPU Tempera<br>ture</li>
+                        <li data-effect="Meteor">Meteor</li>
+                        <li data-effect="Lightning">Lightning</li>
+                        <li data-effect="Rainbow">Rainbow</li>
+                        <li data-effect="POP">POP</li>
+                        <li data-effect="RAP">RAP</li>
+                        <li data-effect="JAZZ">JAZZ</li>
+                        <li data-effect="Play">Play</li>
+                        <li data-effect="Movie">Movie</li>
+                        <li data-effect="Off">Off</li>
+                    </ul> 
+                </div>
+                <div id="colorpicker"></div>
+            </div>
+            <div id="MysticLight" class="col-md-4">
+                <div class="x299-svg col-xs-12">
+                    <svg version="1.0" id="x299-mystic-light-led" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 810 960" style="enable-background:new 0 0 810 960;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0 {
+                            filter: url(#Adobe_OpacityMaskFilter);
+                        }
+                        
+                        .st1 {
+                            mask: url(#msi-b-light-group_1);
+                            fill: url(#msi-b-light-group_2);
+                        }
+                        
+                        .st2 {
+                            filter: url(#Adobe_OpacityMaskFilter_1);
+                        }
+                        
+                        .st3 {
+                            fill: url(#SVGID_1);
+                        }
+                        
+                        .st4 {
+                            fill: url(#SVGID_2);
+                        }
+                        
+                        .st5 {
+                            mask: url(#gaming-pro-light-group_1);
+                        }
+                        
+                        .st6 {
+                            fill: url(#gaming-pro-light-svg-5);
+                        }
+                        
+                        .st7 {
+                            fill: url(#gaming-pro-light-svg-4);
+                        }
+                        
+                        .st8 {
+                            fill: url(#gaming-pro-light-svg-3);
+                        }
+                        
+                        .st9 {
+                            fill: url(#gaming-pro-light-svg-2);
+                        }
+                        
+                        .st10 {
+                            fill: url(#gaming-pro-light-svg-1);
+                        }
+                        
+                        .st11 {
+                            filter: url(#Adobe_OpacityMaskFilter_2);
+                        }
+                        
+                        .st12 {
+                            mask: url(#outer-right-upper-light-group_1);
+                        }
+                        
+                        .st13 {
+                            fill: url(#outer-right-upper-light-svg-3);
+                        }
+                        
+                        .st14 {
+                            fill: url(#outer-right-upper-light-svg-2);
+                        }
+                        
+                        .st15 {
+                            fill: url(#outer-right-upper-light-svg-1);
+                        }
+                        
+                        .st16 {
+                            filter: url(#Adobe_OpacityMaskFilter_3);
+                        }
+                        
+                        .st17 {
+                            mask: url(#outer-right-lower-light-group_1);
+                        }
+                        
+                        .st18 {
+                            fill: url(#outer-right-lower-light-svg-5);
+                        }
+                        
+                        .st19 {
+                            fill: url(#outer-right-lower-light-svg-4);
+                        }
+                        
+                        .st20 {
+                            fill: url(#outer-right-lower-light-svg-3);
+                        }
+                        
+                        .st21 {
+                            fill: url(#outer-right-lower-light-svg-2);
+                        }
+                        
+                        .st22 {
+                            fill: url(#outer-right-lower-light-svg-1);
+                        }
+                        
+                        .st23 {
+                            filter: url(#Adobe_OpacityMaskFilter_4);
+                        }
+                        
+                        .st24 {
+                            mask: url(#msi-a-light-group_1);
+                        }
+                        
+                        .st25 {
+                            fill: url(#msi-a-light-svg-3);
+                        }
+                        
+                        .st26 {
+                            fill: url(#msi-a-light-svg-2);
+                        }
+                        
+                        .st27 {
+                            fill: url(#msi-a-light-svg-1);
+                        }
+                        
+                        .st28 {
+                            filter: url(#Adobe_OpacityMaskFilter_5);
+                        }
+                        
+                        .st29 {
+                            fill: url(#SVGID_3);
+                        }
+                        
+                        .st30 {
+                            fill: url(#SVGID_4);
+                        }
+                        
+                        .st31 {
+                            mask: url(#audio-boost-light-group_1);
+                        }
+                        
+                        .st32 {
+                            fill: url(#audio-boost-light-svg-3);
+                        }
+                        
+                        .st33 {
+                            fill: url(#audio-boost-light-svg-2);
+                        }
+                        
+                        .st34 {
+                            fill: url(#audio-boost-light-svg-1);
+                        }
+                        
+                        .st35 {
+                            filter: url(#Adobe_OpacityMaskFilter_6);
+                        }
+                        
+                        .st36 {
+                            mask: url(#center-light-group_1);
+                        }
+                        
+                        .st37 {
+                            fill: url(#center-light-svg-2);
+                        }
+                        
+                        .st38 {
+                            fill: url(#center-light-svg-1);
+                        }
+                        
+                        .st39 {
+                            filter: url(#Adobe_OpacityMaskFilter_7);
+                        }
+                        
+                        .st40 {
+                            mask: url(#x299-top-light-group_1);
+                        }
+                        
+                        .st41 {
+                            fill: url(#x299-top-light-svg-3);
+                        }
+                        
+                        .st42 {
+                            fill: url(#x299-top-light-svg-2);
+                        }
+                        
+                        .st43 {
+                            fill: url(#x299-top-light-svg-1);
+                        }
+                        </style>
+                        <!--  -->
+                        <!-- gaming-pro-light-group___GAMING PRO-->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_1" filterUnits="userSpaceOnUse" x="78.81" y="163.58" width="91.13" height="169.84">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="78.81" y="163.58" width="91.13" height="169.84" id="gaming-pro-light-group_1">
+                            <g class="st2">
+                                <linearGradient id="SVGID_1" gradientUnits="userSpaceOnUse" x1="64.5633" y1="257.8306" x2="134.8513" y2="263.9799">
+                                    <stop offset="0.7178" style="stop-color:#000000" />
+                                    <stop offset="1" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                                <polygon class="st3" points="137,138 135,177 140,195 131,308 122,328 115,387 53,390 80,126" />
+                                <linearGradient id="SVGID_2" gradientUnits="userSpaceOnUse" x1="129.3981" y1="262.2029" x2="202.9265" y2="267.3445">
+                                    <stop offset="0" style="stop-color:#FFFFFF" />
+                                    <stop offset="0.0175" style="stop-color:#F2F2F2" />
+                                    <stop offset="0.0914" style="stop-color:#C0C0C0" />
+                                    <stop offset="0.1708" style="stop-color:#929292" />
+                                    <stop offset="0.2539" style="stop-color:#6B6B6B" />
+                                    <stop offset="0.3415" style="stop-color:#4A4A4A" />
+                                    <stop offset="0.435" style="stop-color:#2F2F2F" />
+                                    <stop offset="0.5365" style="stop-color:#1A1A1A" />
+                                    <stop offset="0.6501" style="stop-color:#0B0B0B" />
+                                    <stop offset="0.7856" style="stop-color:#030303" />
+                                    <stop offset="1" style="stop-color:#000000" />
+                                </linearGradient>
+                                <polygon class="st4" points="147,146 156,207 148,302 122,368 194,395 202,139" />
+                            </g>
+                        </mask>
+                        <g id="gaming-pro-light-group" class="st5">
+                            <!-- gaming-pro-light-svg-5 -->
+                            <radialGradient id="gaming-pro-light-svg-5" class="gaming-pro-light-gradient" cx="126.9437" cy="206.5784" r="43.0012" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="gaming-pro-light-svg-5" class="st6" d="M126.95,249.58c-0.87,0-1.75-0.03-2.62-0.08c-11.48-0.7-21.99-5.83-29.6-14.43
+                            c-7.61-8.6-11.42-19.65-10.71-31.12c1.38-22.64,20.23-40.37,42.91-40.37c0.87,0,1.75,0.03,2.62,0.08
+                            c11.48,0.7,21.98,5.83,29.6,14.43c7.61,8.6,11.42,19.65,10.72,31.12C168.48,231.84,149.63,249.58,126.95,249.58z" />
+                            <!-- gaming-pro-light-svg-4 -->
+                            <radialGradient id="gaming-pro-light-svg-4" class="gaming-pro-light-gradient" cx="125.6619" cy="227.5393" r="43.0012" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="gaming-pro-light-svg-4" class="st7" d="M125.67,270.54c-0.87,0-1.75-0.03-2.62-0.08c-11.48-0.7-21.99-5.83-29.6-14.43
+                            c-7.61-8.6-11.42-19.66-10.71-31.12c1.38-22.64,20.23-40.37,42.91-40.37c0.87,0,1.75,0.03,2.61,0.08
+                            c11.48,0.7,21.99,5.83,29.6,14.43c7.61,8.6,11.42,19.65,10.72,31.12C167.19,252.81,148.35,270.54,125.67,270.54z" />
+                            <!-- gaming-pro-light-svg-3 -->
+                            <radialGradient id="gaming-pro-light-svg-3" class="gaming-pro-light-gradient" cx="124.3806" cy="248.5" r="43.0009" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="gaming-pro-light-svg-3" class="st8" d="M124.39,291.5c-0.87,0-1.75-0.03-2.61-0.08c-23.68-1.45-41.76-21.88-40.31-45.54
+                            c1.38-22.64,20.23-40.38,42.91-40.38c0.87,0,1.75,0.03,2.61,0.08c11.48,0.7,21.99,5.83,29.6,14.43
+                            c7.61,8.6,11.42,19.65,10.72,31.12C165.91,273.77,147.06,291.5,124.39,291.5z" />
+                            <!-- gaming-pro-light-svg-2 -->
+                            <radialGradient id="gaming-pro-light-svg-2" class="gaming-pro-light-gradient" cx="123.0984" cy="269.4607" r="43.0007" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="gaming-pro-light-svg-2" class="st9" d="M123.11,312.46c-0.87,0-1.75-0.03-2.62-0.08c-23.68-1.45-41.76-21.88-40.31-45.54
+                            c1.38-22.64,20.23-40.38,42.91-40.38c0.87,0,1.75,0.03,2.62,0.08c23.68,1.45,41.76,21.88,40.31,45.54
+                            C164.64,294.73,145.79,312.46,123.11,312.46z" />
+                            <!-- gaming-pro-light-svg-1 -->
+                            <radialGradient id="gaming-pro-light-svg-1" class="gaming-pro-light-gradient" cx="121.8168" cy="290.4216" r="43.0011" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="gaming-pro-light-svg-1" class="st10" d="M121.82,333.42c-0.87,0-1.75-0.03-2.62-0.08c-11.48-0.7-21.98-5.83-29.6-14.43
+                            C82,310.31,78.2,299.26,78.9,287.8c1.38-22.64,20.23-40.38,42.91-40.38c0.87,0,1.75,0.03,2.62,0.08
+                            c11.48,0.7,21.98,5.83,29.6,14.43c7.61,8.6,11.42,19.65,10.72,31.12C163.35,315.69,144.5,333.42,121.82,333.42z" />
+                        </g>
+                        <!-- gaming-pro-light-group___GAMING PRO的路徑結束-->
+                        <!--  -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_2" filterUnits="userSpaceOnUse" x="719" y="61.34" width="63" height="216.33">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="719" y="61.34" width="63" height="216.33" id="outer-right-upper-light-group_1">
+                            <g class="st11">
+                                <path d="M737.36,283.4l-3.2-206.37c0,0-0.01-13.08-3.05-15.53c-2.21-1.79-5.91-3.31-17.46-0.83c-15.18,3.26-34.15,5.69-34.15,5.69
+                                l-1.32,216.99L737.36,283.4z" />
+                            </g>
+                        </mask>
+                        <!-- outer-right-upper-light-group 外圍LED上半部 -->
+                        <g id="outer-right-upper-light-group" class="st12">
+                            <radialGradient id="outer-right-upper-light-svg-3" class="outer-right-upper-light-gradient" cx="725.0903" cy="224.0656" r="60.3512" fx="715.5305" fy="224.4228" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 120.6997 -83.3942)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-upper-light-path-3" class="st13" d="M756.55,61.34c-0.09,0-0.18,0.01-0.27,0.01v-0.01H719v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C782,80.71,770.6,61.34,756.55,61.34z" />
+
+
+                            <radialGradient id="outer-right-upper-light-svg-2" class="outer-right-upper-light-gradient" cx="725.0903" cy="269.6078" r="60.3512" fx="715.5305" fy="269.965" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 121.097 -52.6402)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-upper-light-path-2" class="st14" d="M756.55,126.23c-0.09,0-0.18,0.01-0.27,0.01v-0.01H719v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C782,145.61,770.6,126.23,756.55,126.23z" />
+
+
+                            <radialGradient id="outer-right-upper-light-svg-1" class="outer-right-upper-light-gradient" cx="725.0903" cy="315.1499" r="60.3512" fx="715.5305" fy="315.5071" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 121.4943 -21.8861)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-upper-light-path-1" class="st15" d="M756.55,191.13c-0.09,0-0.18,0.01-0.27,0.01v-0.01H719v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C782,210.5,770.6,191.13,756.55,191.13z" />
+                        </g>
+                        <!-- outer-right-upper-light-group 外圍LED上半部結束 -->
+                        <!--  -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_3" filterUnits="userSpaceOnUse" x="725" y="486.34" width="63" height="342.33">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="725" y="486.34" width="63" height="342.33" id="outer-right-lower-light-group_1">
+                            <g class="st16">
+                                <polygon points="739.72,486.25 682.37,495.74 688.93,841 741.36,849.19       " />
+                            </g>
+                        </mask>
+                        <!-- outer-right-lower-light-group 外圍LED下半部-->
+                        <g id="outer-right-lower-light-group" class="st17">
+                            <radialGradient id="outer-right-lower-light-svg-5" class="outer-right-lower-light-gradient" cx="732.247" cy="522.3112" r="60.3512" fx="722.6871" fy="522.6685" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 123.3027 117.8055)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-lower-light-path-5" class="st18" d="M762.55,486.34c-0.09,0-0.18,0.01-0.27,0.01v-0.01H725v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C788,505.71,776.6,486.34,762.55,486.34z" />
+                            <radialGradient id="outer-right-lower-light-svg-4" class="outer-right-lower-light-gradient" cx="732.247" cy="567.8533" r="60.3512" fx="722.6871" fy="568.2106" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 123.6999 148.5595)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-lower-light-path-4" class="st19" d="M762.55,551.23c-0.09,0-0.18,0.01-0.27,0.01v-0.01H725v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C788,570.61,776.6,551.23,762.55,551.23z" />
+                            <radialGradient id="outer-right-lower-light-svg-3" class="outer-right-lower-light-gradient" cx="732.247" cy="613.3955" r="60.3512" fx="722.6871" fy="613.7527" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 124.0972 179.3135)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-lower-light-path-3" class="st20" d="M762.55,616.13c-0.09,0-0.18,0.01-0.27,0.01v-0.01H725v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C788,635.5,776.6,616.13,762.55,616.13z" />
+                            <radialGradient id="outer-right-lower-light-svg-2" class="outer-right-lower-light-gradient" cx="732.247" cy="656.9043" r="60.3512" fx="722.6871" fy="657.2615" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 124.4768 208.6944)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-lower-light-path-2" class="st21" d="M762.55,678.13c-0.09,0-0.18,0.01-0.27,0.01v-0.01H725v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C788,697.5,776.6,678.13,762.55,678.13z" />
+                            <radialGradient id="outer-right-lower-light-svg-1" class="outer-right-lower-light-gradient" cx="732.247" cy="701.8166" r="60.3512" fx="722.6871" fy="702.1738" gradientTransform="matrix(0.8382 0.0282 -8.723471e-03 0.7497 124.8686 239.0231)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0738" style="stop-color:#FF0000" />
+                                <stop offset="0.3465" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="outer-right-lower-light-path-1" class="st22" d="M762.55,742.13c-0.09,0-0.18,0.01-0.27,0.01v-0.01H725v86.53h37.28v-0.01
+                            c0.09,0,0.18,0.01,0.27,0.01c14.06,0,25.45-19.37,25.45-43.27C788,761.5,776.6,742.13,762.55,742.13z" />
+                        </g>
+                        <!-- outer-right-lower-light-group 外圍LED下半部END-->
+                        <!--  -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_4" filterUnits="userSpaceOnUse" x="519.57" y="604.54" width="148" height="117">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="519.57" y="604.54" width="148" height="117" id="msi-a-light-group_1">
+                            <g class="st23">
+                                <polygon points="504,611 674.55,698.31 672.85,608.66 486,536 497,606        " />
+                                <polygon points="498,613 517,630 606,681 643,690 672,704 649,759 628,759 517,690        " />
+                            </g>
+                        </mask>
+                        <!-- msi-a-light-group___MSI LOGO上面的LED 的漸層  -->
+                        <g id="msi-a-light-group" class="st24">
+                            <radialGradient id="msi-a-light-svg-3" class="msi-a-light-gradient" cx="624.5679" cy="678.5386" r="43.0014" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="msi-a-light-svg-3" class="st25" d="M624.58,721.54c-1.38,0-2.78-0.07-4.14-0.2c-23.59-2.28-40.94-23.33-38.67-46.92
+                            c2.14-22.17,20.53-38.88,42.79-38.88c1.38,0,2.78,0.07,4.14,0.2c23.59,2.28,40.94,23.33,38.67,46.92
+                            C665.23,704.83,646.83,721.54,624.58,721.54z" />
+                            <radialGradient id="msi-a-light-svg-2" class="msi-a-light-gradient" cx="593.5679" cy="663.5386" r="43.0014" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="msi-a-light-svg-2" class="st26" d="M593.58,706.54c-1.38,0-2.78-0.07-4.14-0.2c-23.59-2.28-40.94-23.33-38.67-46.92
+                            c2.14-22.17,20.53-38.88,42.79-38.88c1.38,0,2.78,0.07,4.14,0.2c23.59,2.28,40.94,23.33,38.67,46.92
+                            C634.23,689.83,615.83,706.54,593.58,706.54z" />
+                            <radialGradient id="msi-a-light-svg-1" class="msi-a-light-gradient" cx="562.5679" cy="647.5386" r="43.0014" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="msi-a-light-svg-1" class="st27" d="M562.58,690.54c-1.38,0-2.78-0.07-4.14-0.2c-23.59-2.28-40.94-23.33-38.67-46.92
+                            c2.14-22.17,20.53-38.88,42.79-38.88c1.38,0,2.78,0.07,4.14,0.2c23.59,2.28,40.94,23.33,38.67,46.92
+                            C603.23,673.83,584.83,690.54,562.58,690.54z" />
+                        </g>
+                        <!-- msi-a-light-group___MSI LOGO上面的LED 結束  -->
+                        <!--  -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="531.13" y="666.1" width="118.91" height="118.9">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="531.13" y="666.1" width="118.91" height="118.9" id="msi-b-light-group_1">
+                            <g class="st0">
+                                <polygon points="498,613 517,630 606,681 643,690 672,704 649,759 628,759 517,690" />
+                            </g>
+                        </mask>
+                        <!-- msi-b-light-group___MSI LOGO下面的LED 的漸層-->
+                        <radialGradient id="msi-b-light-group_2" cx="590.5803" cy="725.5513" r="59.4515" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.1881" style="stop-color:#FF0000" />
+                            <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                        </radialGradient>
+                        <path id="msi-b-light-group" class="st1" d="M590.59,785c-1.91,0-3.84-0.09-5.73-0.28c-15.79-1.52-30.06-9.11-40.16-21.37
+                        c-10.1-12.25-14.82-27.7-13.3-43.51c2.95-30.64,28.39-53.75,59.16-53.75c1.9,0,3.83,0.09,5.72,0.28c15.8,1.52,30.07,9.11,40.17,21.37c10.1,12.25,14.82,27.71,13.3,43.52C646.8,761.9,621.37,785,590.59,785z" />
+                        <!-- msi-b-light-group___MSI LOGO下面的LED 的漸層結束-->
+                        <!--  -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_5" filterUnits="userSpaceOnUse" x="54.64" y="565.64" width="94.04" height="182.81">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="54.64" y="565.64" width="94.04" height="182.81" id="audio-boost-light-group_1">
+                            <g class="st28">
+                                <linearGradient id="SVGID_3" gradientUnits="userSpaceOnUse" x1="96" y1="644" x2="161" y2="644">
+                                    <stop offset="0" style="stop-color:#000000;stop-opacity:0.9" />
+                                    <stop offset="1" style="stop-color:#000000" />
+                                </linearGradient>
+                                <path class="st29" d="M161,534l-41,39c0,0-9,8-9,12L96,754l53-33l2.33-131H161V534z" />
+                                <linearGradient id="SVGID_4" gradientUnits="userSpaceOnUse" x1="54" y1="652" x2="123" y2="652">
+                                    <stop offset="0" style="stop-color:#000000" />
+                                    <stop offset="1" style="stop-color:#000000;stop-opacity:0.9" />
+                                </linearGradient>
+                                <polygon class="st30" points="69,546 65.66,587.8 64,588 54,742 88,758 104.58,587.38 104.58,587.38 106,573 123,558       " />
+                            </g>
+                        </mask>
+                        <!-- audio-boost-light-group  -->
+                        <g id="audio-boost-light-group" class="st31">
+                            <radialGradient id="audio-boost-light-svg-3" class="audio-boost-light-gradient" cx="105.6777" cy="608.6362" r="43.0013" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="audio-boost-light-svg-3" class="st32" d="M105.69,651.64c-1.38,0-2.78-0.07-4.14-0.2c-23.6-2.28-40.95-23.33-38.67-46.93
+                            c2.14-22.16,20.53-38.87,42.79-38.87c1.38,0,2.78,0.07,4.14,0.2c23.59,2.27,40.94,23.32,38.67,46.92
+                            C146.34,634.93,127.94,651.64,105.69,651.64z" />
+                            <radialGradient id="audio-boost-light-svg-2" class="audio-boost-light-gradient" cx="101.662" cy="657.0391" r="43.0024" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="audio-boost-light-svg-2" class="st33" d="M101.67,700.04c-1.38,0-2.77-0.07-4.14-0.2c-11.43-1.1-21.75-6.59-29.05-15.46
+                            c-7.3-8.86-10.72-20.04-9.62-31.48c2.13-22.16,20.53-38.87,42.79-38.87c1.38,0,2.78,0.07,4.14,0.2
+                            c11.43,1.1,21.75,6.59,29.05,15.45c7.3,8.86,10.72,20.04,9.62,31.47C142.32,683.33,123.93,700.04,101.67,700.04z" />
+                            <radialGradient id="audio-boost-light-svg-1" class="audio-boost-light-gradient" cx="97.646" cy="705.4419" r="43.0023" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="audio-boost-light-svg-1" class="st34" d="M97.66,748.44c-1.38,0-2.78-0.07-4.14-0.2c-11.43-1.1-21.75-6.59-29.05-15.45
+                            c-7.3-8.86-10.72-20.04-9.62-31.48c2.13-22.16,20.53-38.87,42.79-38.87c1.38,0,2.77,0.07,4.14,0.2
+                            c11.43,1.1,21.75,6.59,29.05,15.46c7.3,8.86,10.72,20.04,9.62,31.48C138.31,731.73,119.92,748.44,97.66,748.44z" />
+                        </g>
+                        <!-- audio-boost-light-group end -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_6" filterUnits="userSpaceOnUse" x="349.03" y="416" width="161.08" height="113.08">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="349.03" y="416" width="161.08" height="113.08" id="center-light-group_1">
+                            <g class="st35">
+                                <path d="M495.55,503.84L498,512l58-21l-26-66H335l1,37l46,2l105,15l5,13l1.61,5.35C491.21,491.7,488,489,488,489l-153-25v67h164
+                                l-1-14C498,517,496.99,509.95,495.55,503.84z" />
+                            </g>
+                        </mask>
+                        <!-- 中間LED -->
+                        <g id="center-light-group" class="st36">
+                            <radialGradient id="center-light-svg-2" class="center-light-gradient" cx="458.5691" cy="477.5386" r="51.5402" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="center-light-svg-2" class="st37" d="M458.58,529.08c-1.66,0-3.33-0.08-4.96-0.24c-28.28-2.73-49.07-27.96-46.35-56.24
+                            c2.56-26.57,24.61-46.6,51.29-46.6c1.65,0,3.32,0.08,4.96,0.24c13.69,1.32,26.05,7.9,34.81,18.53
+                            c8.76,10.63,12.86,24.02,11.54,37.72C507.31,509.05,485.26,529.08,458.58,529.08z" />
+                            <radialGradient id="center-light-svg-1" class="center-light-gradient" cx="400.5691" cy="467.5386" r="51.5402" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="center-light-svg-1" class="st38" d="M400.58,519.08c-1.66,0-3.33-0.08-4.96-0.24c-28.28-2.73-49.07-27.96-46.35-56.24
+                            c2.56-26.57,24.61-46.6,51.29-46.6c1.65,0,3.32,0.08,4.96,0.24c13.69,1.32,26.05,7.9,34.81,18.53
+                            c8.76,10.63,12.86,24.02,11.54,37.72C449.31,499.05,427.26,519.08,400.58,519.08z" />
+                        </g>
+                        <!-- 主板上面X299的LED -->
+                        <defs>
+                            <filter id="Adobe_OpacityMaskFilter_7" filterUnits="userSpaceOnUse" x="372.79" y="71.87" width="162.74" height="98">
+                                <feFlood style="flood-color:white;flood-opacity:1" result="back" />
+                                <feBlend in="SourceGraphic" in2="back" mode="normal" />
+                            </filter>
+                        </defs>
+                        <mask maskUnits="userSpaceOnUse" x="372.79" y="71.87" width="162.74" height="98" id="x299-top-light-group_1">
+                            <g class="st39">
+                                <polygon points="344,92 381,129 549,104 511,57 338,84" />
+                                <path d="M363,134c0,0,6,8,8,8s164.53-25,164.53-25l16.47-2l1,40l-190,29V134z" />
+                            </g>
+                        </mask>
+                        <g id="x299-top-light-group" class="st40">
+                            <radialGradient id="x299-top-light-svg-3" class="x299-top-light-gradient" cx="492.5304" cy="114.8726" r="43.0023" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="x299-top-light-svg-3" class="st41" d="M492.52,157.87c-21.92,0-40.29-16.43-42.72-38.22
+                            c-1.28-11.41,1.97-22.63,9.14-31.61s17.4-14.63,28.81-15.9c1.58-0.18,3.19-0.27,4.79-0.27c21.92,0,40.29,16.43,42.72,38.22
+                            c2.63,23.56-14.39,44.87-37.95,47.51C495.73,157.78,494.12,157.87,492.52,157.87z" />
+                            <radialGradient id="x299-top-light-svg-2" class="x299-top-light-gradient" cx="455.1611" cy="121.8726" r="43.0015" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="x299-top-light-svg-2" class="st42" d="M455.15,164.87c-21.92,0-40.29-16.43-42.72-38.22
+                            c-2.64-23.56,14.39-44.88,37.95-47.51c1.58-0.18,3.19-0.27,4.79-0.27c21.92,0,40.28,16.43,42.72,38.22
+                            c2.64,23.56-14.39,44.88-37.95,47.52C458.36,164.78,456.75,164.87,455.15,164.87z" />
+                            <radialGradient id="x299-top-light-svg-1" class="x299-top-light-gradient" cx="415.7917" cy="126.8726" r="43.0015" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.1881" style="stop-color:#FF0000" />
+                                <stop offset="1" style="stop-color:#FF0000;stop-opacity:0" />
+                            </radialGradient>
+                            <path id="x299-top-light-svg-1" class="st43" d="M415.78,169.87c-21.92,0-40.28-16.43-42.72-38.22
+                            c-2.64-23.57,14.39-44.88,37.95-47.52c1.58-0.18,3.19-0.27,4.79-0.27c21.92,0,40.29,16.43,42.72,38.22
+                            c2.64,23.56-14.39,44.88-37.95,47.52C418.99,169.78,417.38,169.87,415.78,169.87z" />
+                        </g>
+                        <!-- 主板上面X299的LED 結束-->
+                    </svg>
+                </div>
+                <div class="x299-img col-xs-12"><img class="img-responsive" src="x299.jpg" alt=""></div>
+            </div>
+        </section>
+    </div>
+    <!-- js -->
+    <!--      DeleteBeforeOnline    -->
+    <!--      DeleteBeforeOnline    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha256-rD86dXv7/J2SvI9ebmNi5dSuQdvzzrrN2puPca/ILls=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js" integrity="sha256-zAdh941DoLFXtGUGZBEF/46kYB76aqVq3aCTjawcSws=" crossorigin="anonymous"></script>
+    <script src="https://asset.msi.com/event/mb/2017/mb-mystic-light/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://www.msi.com/js/wow.min.js"></script>
+    <script src="js/Velocity.js"></script>
+    <script src="js/iro.js"></script>
+    <script src="js/x299-led.js"></script>
+</body>
+
+</html>
